@@ -9,6 +9,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Card from './components/card';
+import Collapse from './components/collapse';
 
 //first we will create a functional component here. Later we will crete a class component.
 // function App(){
@@ -43,8 +44,12 @@ import Card from './components/card';
 
 const App = () => {
   return (
+  
     <div>
+      
+
       <div className="card-group">
+      <Collapse href="collapseExample1">
 
         <Card
           cardTitle="Lara"
@@ -52,18 +57,27 @@ const App = () => {
           updatedTime=" 1 minutes ago updated"
           image="https://picsum.photos/id/237/200/300"
         />
+        </Collapse>
+
+        <Collapse href="collapseExample2">
         <Card
           cardTitle="Nell"
           cardText="Card Text 2"
           updatedTime=" 2 minutes ago updated"
           image="https://picsum.photos/id/102/200/300"
         />
+          </Collapse>
+
+          <Collapse href="collapseExample3">
+
         <Card
           cardTitle="Ceyhuncan"
           cardText="Card Text 3"
           updatedTime=" 3 minutes ago updated"
           image="https://picsum.photos/id/152/200/300" 
         />
+                  </Collapse>
+
       </div>
     </div>
   );
