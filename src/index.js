@@ -44,52 +44,69 @@ import Collapse from './components/collapse';
 
 const App = () => {
   return (
-  
-    <div>
-      
 
-      <div className="card-group">
-      <Collapse href="collapseExample1">
+    <div className="container">
 
-        <Card
-          cardTitle="Lara"
-          cardText="Card Text 1"
-          updatedTime=" 1 minutes ago updated"
-          image="https://picsum.photos/id/237/200/300"
-        />
-        </Collapse>
+      <div className='row'>
+        <div className="card-group w-100">
 
-        <Collapse href="collapseExample2">
-        <Card
-          cardTitle="Nell"
-          cardText="Card Text 2"
-          updatedTime=" 2 minutes ago updated"
-          image="https://picsum.photos/id/102/200/300"
-        />
-          </Collapse>
+          <div className='col'>
 
-          <Collapse href="collapseExample3">
+            <Collapse href="collapseExample1">
 
-        <Card
-          cardTitle="Ceyhuncan"
-          cardText="Card Text 3"
-          updatedTime=" 3 minutes ago updated"
-          image="https://picsum.photos/id/152/200/300" 
-        />
-                  </Collapse>
+              <Card
+                cardTitle="Lara"
+                cardText="Card Text 1"
+                updatedTime=" 1 minutes ago updated"
+                image="https://picsum.photos/id/237/200/300"
+              />
 
+            </Collapse>
+            </div>
+
+            <div className='col'>
+
+              <Collapse href="collapseExample2">
+
+                <Card
+                  cardTitle="Nil"
+                  cardText="Card Text 2"
+                  updatedTime=" 2 minutes ago updated"
+                  image="https://picsum.photos/id/238/200/300"
+                />
+
+              </Collapse>
+
+            </div>
+
+            <div className='col'>
+
+              <Collapse href="collapseExample3">
+
+                <Card
+                  cardTitle="Cey"
+                  cardText="Card Text 1"
+                  updatedTime=" 3 minutes ago updated"
+                  image="https://picsum.photos/id/239/200/300"
+                />
+
+              </Collapse>
+
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  );
+      );
 }
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+      );
 
 // ReactDOM.render(<App/>, document.getElementById("root"));
